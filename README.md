@@ -40,7 +40,8 @@ Ethernet).
 
 ```bash
 nslookup example.com
-dig example.com ```
+dig example.com 
+```
 
 ---
 
@@ -55,7 +56,8 @@ Dynamic routing: Routes automatically updated by protocols like OSPF or BGP.
 NAT (Network Address Translation): Allows multiple devices with private IPs to access the 
 internet via a single public IP.
 
-``` Commands for routing and connectivity
+```
+ Commands for routing and connectivity
 ip route             # Check routing table
 ping <host>          # Test connectivity
 traceroute <host>    # Trace packet path
@@ -73,9 +75,11 @@ Example: 192.168.1.0/24 → 24 bits network, 8 bits host
 
 ---
 
-```Commands to inspect IP configuration
+```
+Commands to inspect IP configuration
 ifconfig           # View local interfaces (macOS/Linux)
-ip addr show       # Alternative command for IP info```
+ip addr show       # Alternative command for IP info
+```
 
 ## 6. Network Troubleshooting
 
@@ -84,7 +88,8 @@ blocks.
 
 ---
 
-``` DevOps tools for troubleshooting 
+```
+ DevOps tools for troubleshooting 
 ping <host>          # Test connectivity
 traceroute <host>    # Trace path to host
 nslookup <domain>    # Check DNS resolution
