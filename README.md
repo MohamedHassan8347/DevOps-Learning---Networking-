@@ -39,10 +39,10 @@ Ethernet).
   - **Zone files**: Define DNS records for a domain.  
 - Commands for troubleshooting DNS:
 ```bash
-nslookup example.com
+3 nslookup example.com
 dig example.com
 
-/etc/hosts can override DNS resolution for testing purposes.
+/etc/hosts can override DNS resolution for testing purposes.```
 
 
 4. Routing & NAT
@@ -56,10 +56,10 @@ Dynamic routing: Routes automatically updated by protocols like OSPF or BGP.
 NAT (Network Address Translation): Allows multiple devices with private IPs to access the 
 internet via a single public IP.
 
-Commands for routing and connectivity:
+``` 4 Commands for routing and connectivity:
 ip route        # Check routing table
 ping <host>     # Test connectivity
-traceroute <host>  # Trace packet path
+traceroute <host>  # Trace packet path ```
 
 
 5. IP Addressing & Subnetting
@@ -73,24 +73,24 @@ CIDR notation indicates network vs host bits.
 Example: 192.168.1.0/24 → 24 bits network, 8 
 bits host
 
-Commands to inspect IP configuration:
+``` 5 - Commands to inspect IP configuration:
 
 ifconfig        # View local interfaces (macOS/Linux)
-ip addr show    # Alternative command for IP info
+ip addr show    # Alternative command for IP info```
 
 6. Network Troubleshooting
 
 Common issues: connectivity problems, DNS failures, IP conflicts, routing errors, firewall 
 blocks.
 
-DevOps tools for troubleshooting:
+```6 DevOps tools for troubleshooting:
 
 ping <host>          # Test connectivity
 traceroute <host>    # Trace path to host
 nslookup <domain>    # Check DNS resolution
 dig <domain>         # Advanced DNS queries
 tcpdump -i eth0      # Capture packets for analysis
-netstat -rn          # View routing tables and active connections
+netstat -rn          # View routing tables and active connections ```
 
 
 7. Practical DevOps Relevance
