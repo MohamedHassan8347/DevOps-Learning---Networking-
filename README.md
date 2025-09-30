@@ -45,7 +45,7 @@ dig example.com
 /etc/hosts can override DNS resolution for testing purposes.```
 
 
-4. Routing & NAT
+## 4. Routing & NAT
 
 Routing: How data packets find the best path from source to destination.
 
@@ -56,13 +56,16 @@ Dynamic routing: Routes automatically updated by protocols like OSPF or BGP.
 NAT (Network Address Translation): Allows multiple devices with private IPs to access the 
 internet via a single public IP.
 
+---
+
+
 ``` 4 Commands for routing and connectivity:
 ip route        # Check routing table
 ping <host>     # Test connectivity
 traceroute <host>  # Trace packet path ```
 
 
-5. IP Addressing & Subnetting
+## 5. IP Addressing & Subnetting
 
 Private IPs: Used inside homes or company networks to conserve public IPs and improve 
 security.
@@ -73,15 +76,23 @@ CIDR notation indicates network vs host bits.
 Example: 192.168.1.0/24 → 24 bits network, 8 
 bits host
 
+---
+
+
 ``` 5 - Commands to inspect IP configuration:
 
 ifconfig        # View local interfaces (macOS/Linux)
 ip addr show    # Alternative command for IP info```
 
-6. Network Troubleshooting
+---
+
+
+## 6. Network Troubleshooting
 
 Common issues: connectivity problems, DNS failures, IP conflicts, routing errors, firewall 
 blocks.
+
+---
 
 ```6 DevOps tools for troubleshooting:
 
@@ -92,8 +103,9 @@ dig <domain>         # Advanced DNS queries
 tcpdump -i eth0      # Capture packets for analysis
 netstat -rn          # View routing tables and active connections ```
 
+---
 
-7. Practical DevOps Relevance
+## 7. Practical DevOps Relevance
 
 Networking knowledge is crucial for:
 
@@ -105,7 +117,10 @@ DNS management and load balancing
 
 Debugging CI/CD pipelines and microservices communication
 
-8. Summary
+---
+
+
+## 8. Summary
 
 By learning networking concepts from IP addressing, subnets, NAT, routing, DNS, and 
 troubleshooting tools, I now understand how to:
@@ -117,3 +132,5 @@ Diagnose connectivity and DNS issues
 Use command-line tools for DevOps workflows
 
 Apply these skills to real-world cloud and enterprise environments
+
+---
