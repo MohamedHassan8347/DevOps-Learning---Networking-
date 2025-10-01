@@ -125,4 +125,61 @@ Use command-line tools for DevOps workflows
 Apply these skills to real-world cloud and enterprise environments
 ---
 
+# Deploying NGINX on AWS EC2
 
+This section documents the process of creating an **EC2 instance** running 
+**NGINX** on **port 80**, along with the significance of this exercise for 
+DevOps learning.
+
+---
+
+## Steps to Create an EC2 Instance with NGINX
+
+1. **Launch EC2 Instance**
+   - Log in to the AWS Management Console.
+   - Navigate to **EC2 → Launch Instance**.
+   - Select an AMI (Amazon Linux 2 or Ubuntu recommended).
+   - Choose an instance type (e.g., t2.micro for testing).
+
+2. **Select VPC and Subnet**
+   - Choose a **VPC** (default is fine for testing).
+   - Select a **public subnet** to allow internet access.
+   - Enable **auto-assign public IP**.
+
+3. **Configure Security Group**
+   - Add an inbound rule for **HTTP (port 80)**.
+   - Optionally, allow **SSH (port 22)** for access.
+
+4. **Connect via SSH**
+   ```bash
+   chmod 400 nginx.pem
+   ssh -i "nginx.pem" ec2-user@ec2-44-223-102-42.compute-1.amazonaws.com
+
+sudo amazon-linux-extras enable nginx1
+sudo yum install -y nginx
+
+To start and enable NGINX 
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
+
+To verify that it has been done, I opened a browser and inputted my EC2 
+public IP. I was met with a webpage stating: Welcome to NGINX! The nginx 
+web server has been successfully installed.
+
+## Importance for DevOps
+
+Infrastructure Provisioning: Demonstrates how to spin up cloud resources 
+in AWS.
+
+Networking Understanding: Shows the role of VPCs, subnets, and security 
+groups in exposing services.
+
+Web Server Deployment: NGINX is widely used to serve static content, 
+reverse proxy requests, and load balance applications.
+
+Validation & Monitoring: Ensures your instance is correctly configured and 
+reachable.
+
+Foundation for Automation: Lays the groundwork for scripting deployments 
+with Terraform, Ansible, or CI/CD pipelines.  
