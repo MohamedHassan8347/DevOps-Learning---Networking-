@@ -162,7 +162,7 @@ sudo yum install -y nginx
 To start and enable NGINX 
 sudo systemctl start nginx
 sudo systemctl enable nginx
-
+```
 
 To verify that it has been done, I opened a browser and inputted my EC2 
 public IP. I was met with a webpage stating: Welcome to NGINX! The nginx 
