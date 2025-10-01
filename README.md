@@ -155,13 +155,14 @@ DevOps learning.
    chmod 400 nginx.pem
    ssh -i "nginx.pem" ec2-user@ec2-44-223-102-42.compute-1.amazonaws.com
 
+```
 sudo amazon-linux-extras enable nginx1
 sudo yum install -y nginx
 
 To start and enable NGINX 
 sudo systemctl start nginx
 sudo systemctl enable nginx
-```
+
 
 To verify that it has been done, I opened a browser and inputted my EC2 
 public IP. I was met with a webpage stating: Welcome to NGINX! The nginx 
